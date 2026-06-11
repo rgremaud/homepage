@@ -5,6 +5,11 @@ body {
   font-style: normal;
 }
 
+picture {
+  width: 50vw;
+  height: auto;
+}
+
 i {
   font-size: 1.5rem;
 }
