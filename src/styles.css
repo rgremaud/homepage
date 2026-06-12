@@ -5,6 +5,13 @@ body {
   font-style: normal;
 }
 
+header {
+  border: 1px red solid;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 5vh 5vw;
+}
+
 picture {
   width: 50vw;
   height: auto;
