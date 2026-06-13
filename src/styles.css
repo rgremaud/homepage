@@ -8,14 +8,20 @@ body {
 header {
   border: 1px red solid;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 1fr 1fr;
   margin: 5vh 5vw;
+  gap: 0;
+}
+
+main,
+footer {
+  margin: 0 5vw;
 }
 
 #skullSq {
   height: 400px;
-  width: 100%;
-  object-fit: contain; 
+  width: auto;
+  object-fit: contain;
 }
 
 #aboutMe {
@@ -23,6 +29,20 @@ header {
   flex-direction: column;
   background-color: white;
   margin: 10% 0;
+}
+
+ol {
+  display: grid;
+  border: 1px red solid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  border: 1px red solid;
 }
 
 .icons {
