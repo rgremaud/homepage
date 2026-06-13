@@ -12,9 +12,23 @@ header {
   margin: 5vh 5vw;
 }
 
-picture {
-  width: 50vw;
-  height: auto;
+#skullSq {
+  height: 400px;
+  width: 100%;
+  object-fit: contain; 
+}
+
+#aboutMe {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 10% 0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 i {
