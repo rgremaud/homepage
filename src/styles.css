@@ -65,6 +65,11 @@ li {
   justify-content: space-between;
 }
 
+.svgContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 .icons {
   display: flex;
   flex-direction: row;
