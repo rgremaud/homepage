@@ -43,6 +43,26 @@ ol {
 li {
   list-style-type: none;
   border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+}
+
+.projectImg {
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  height: 45%;
+}
+
+.lineOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .icons {
