@@ -13,8 +13,7 @@ header {
   gap: 0;
 }
 
-main,
-footer {
+main {
   margin: 0 5vw;
 }
 
@@ -78,6 +77,23 @@ li {
 
 i {
   font-size: 1.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(45deg, #6e00ff, #f0ecf4);
+  color: white;
+  padding: 0 5vw;
+}
+
+.addressLine {
+  display: flex;
+  flex-direction: row;
+}
+
+.whiteSvg {
+ filter: invert(100%) sepia(43%) saturate(10%) hue-rotate(173deg) brightness(102%) contrast(104%); 
 }
 
 .diagonal-box {
