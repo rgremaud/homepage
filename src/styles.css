@@ -1,3 +1,25 @@
+:root {
+  --shadow-color: 0deg 0% 63%;
+  --shadow-elevation-low:
+    0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.08),
+    0.5px 0.9px 1.5px -0.3px hsl(var(--shadow-color) / 0.25),
+    1px 2px 3.2px -0.5px hsl(var(--shadow-color) / 0.43);
+  --shadow-elevation-medium:
+    0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.08),
+    1.1px 2.3px 3.6px -0.2px hsl(var(--shadow-color) / 0.22),
+    2.4px 4.7px 7.5px -0.4px hsl(var(--shadow-color) / 0.36),
+    5px 10px 15.8px -0.5px hsl(var(--shadow-color) / 0.5);
+  --shadow-elevation-high:
+    0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.07),
+    2.3px 4.7px 7.4px -0.1px hsl(var(--shadow-color) / 0.14),
+    4.2px 8.4px 13.3px -0.2px hsl(var(--shadow-color) / 0.2),
+    6.2px 12.5px 19.8px -0.2px hsl(var(--shadow-color) / 0.27),
+    8.9px 17.8px 28.2px -0.3px hsl(var(--shadow-color) / 0.34),
+    12.6px 25.3px 40.1px -0.4px hsl(var(--shadow-color) / 0.4),
+    17.9px 35.7px 56.6px -0.5px hsl(var(--shadow-color) / 0.47),
+    25px 50px 79.2px -0.5px hsl(var(--shadow-color) / 0.53);
+}
+
 body {
   font-family: "Mozilla Text", sans-serif;
   font-optical-sizing: auto;
@@ -6,15 +28,18 @@ body {
 }
 
 header {
-  border: 1px red solid;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   margin: 5vh 5vw;
   gap: 0;
 }
 
+header > * {
+  box-shadow: var(--shadow-elevation-medium);
+}
+
 main {
-  margin: 0 5vw;
+  margin: 0 5vw 5vh 10vw;
 }
 
 #skullSq {
@@ -32,24 +57,25 @@ main {
 
 ol {
   display: grid;
-  border: 1px red solid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 2.5vw;
   margin: 0;
   padding: 0;
 }
 
 li {
   list-style-type: none;
-  border: 1px red solid;
   display: flex;
   flex-direction: column;
   height: 40vh;
+  box-shadow: var(--shadow-elevation-medium);
 }
 
 .projectImg {
-  height: 55%;
+  height: 70%;
   display: flex;
+  font-size: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -72,6 +98,9 @@ li {
 .icons {
   display: flex;
   flex-direction: row;
+}
+
+.top {
   justify-content: flex-end;
 }
 
@@ -84,7 +113,7 @@ footer {
   flex-direction: row;
   background-image: linear-gradient(45deg, #6e00ff, #f0ecf4);
   color: white;
-  padding: 0 5vw;
+  padding: 5vh 5vw;
 }
 
 .addressLine {
