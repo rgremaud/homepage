@@ -42,16 +42,22 @@ main {
   margin: 0 5vw 5vh 10vw;
 }
 
-#skullSq {
+#skull {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 400px;
-  width: auto;
-  object-fit: contain;
+  width: 400px; 
+  font-size: 3rem;
+  color: white;
+  background-image: url("./assets/skull-sq.jpg");
 }
 
 #aboutMe {
   display: flex;
   flex-direction: column;
   background-color: white;
+  width: 60%;
   margin: 10% 0;
 }
 
@@ -63,6 +69,7 @@ ol {
   margin: 0;
   padding: 0;
 }
+
 
 li {
   list-style-type: none;
@@ -135,4 +142,30 @@ footer {
   transform: translateY(-33vh) skewY(-8deg);
   height: 80vh;
   z-index: -1;
+}
+
+@media (max-width: 600px) {
+  header,
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ol {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 5vh; 
+    margin: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  ol {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(3, 2fr);
+    gap: 2.5vw;
+    margin: 0;
+  }
 }
