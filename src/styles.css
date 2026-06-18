@@ -34,10 +34,6 @@ header {
   gap: 0;
 }
 
-header > * {
-  box-shadow: var(--shadow-elevation-medium);
-}
-
 main {
   margin: 0 5vw 5vh 10vw;
 }
@@ -57,6 +53,7 @@ main {
   display: flex;
   flex-direction: column;
   background-color: white;
+  box-shadow: var(--shadow-elevation-medium);
   width: 60%;
   margin: 10% 0;
 }
@@ -149,6 +146,15 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
+  }
+
+
+  #aboutMe {
+    box-shadow: 0px;
+  }
+
+  .diagonal-box {
+    height: 60vh;
   }
 
   ol {
