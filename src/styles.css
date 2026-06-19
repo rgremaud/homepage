@@ -204,10 +204,10 @@ footer {
 @media (max-width: 1024px) {
   ol {
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 2fr);
-    gap: 2.5vw;
-    margin: 0;
+ /*   gap: 2.5vw;
+    margin: 0; */
   }
 }
 
