@@ -53,7 +53,6 @@ main {
   display: flex;
   flex-direction: column;
   background-color: white;
-  box-shadow: var(--shadow-elevation-medium);
   width: 60%;
   margin: 10% 0;
 }
@@ -86,6 +85,7 @@ li {
 
 .details {
   height: 45%;
+  margin: 5%;
 }
 
 .lineOne {
@@ -146,23 +146,58 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
 
+   .leftAddress > * {
+    margin: 15px 0;
+  }
+
+  #skull {
+    width: 90vw; 
+    height: 90vw;
+    margin-top: 5vw;
+    background-size: cover;
+  }
 
   #aboutMe {
     box-shadow: 0px;
+    margin: 30px 0 50px 0; 
+    width: 90vw;
+  }
+  
+  main {
+    margin: 0 5vw 30vw 5vw;
+  }
+
+  h1,
+  .top {
+    text-align: center;
+    justify-content: center;
   }
 
   .diagonal-box {
-    height: 60vh;
+    height: 50vh;
   }
 
   ol {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    row-gap: 5vh; 
+    /* margin: 0; */
+  }
+
+  li {
+  margin: 5vw 0;
+  }
+
+  #skeletonVert {
+    width: 100vw;
+    height: 160px;
+    background-image: url("./assets/skeleton-rect.jpg");
+    background-size: cover;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -173,5 +208,11 @@ footer {
     grid-template-rows: repeat(3, 2fr);
     gap: 2.5vw;
     margin: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  #aboutMe {
+    box-shadow: var(--shadow-elevation-medium); 
   }
 }
