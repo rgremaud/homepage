@@ -201,7 +201,24 @@ footer {
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
+  #skull {
+    z-index: 1;
+    float: left;
+  }
+  
+#skull {
+  justify-content: flex-start;
+  padding-left: 300px;
+  text-wrap: nowrap;
+}
+
+  #aboutMe {
+    height: 400px;
+    margin-left: -200px;
+    padding-left: 200px;
+  }
+
   ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
