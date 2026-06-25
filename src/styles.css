@@ -30,20 +30,21 @@ body {
 header {
   display: flex;
   justify-content: center;
-  margin: 5vh 5vw;
-  gap: 0;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  width: 90vw;
 }
 
 main {
-  margin: 0 5vw 5vh 10vw;
+  margin: 0 5vw 5vh 5vw;
 }
 
 #skull {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 400px;
-  width: 400px; 
+  height: 30vw;
+  width: 30vw;
   font-size: 3rem;
   color: white;
   background-image: url("./assets/skull-sq.jpg");
@@ -53,7 +54,7 @@ main {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 60%;
+  width: 60vw;
   margin: 10% 0;
 }
 
@@ -65,7 +66,6 @@ ol {
   margin: 0;
   padding: 0;
 }
-
 
 li {
   list-style-type: none;
@@ -115,6 +115,7 @@ i {
 footer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-image: linear-gradient(45deg, #6e00ff, #f0ecf4);
   color: white;
   padding: 5vh 5vw;
@@ -126,7 +127,8 @@ footer {
 }
 
 .whiteSvg {
- filter: invert(100%) sepia(43%) saturate(10%) hue-rotate(173deg) brightness(102%) contrast(104%); 
+  filter: invert(100%) sepia(43%) saturate(10%) hue-rotate(173deg)
+    brightness(102%) contrast(104%);
 }
 
 .diagonal-box {
@@ -141,6 +143,15 @@ footer {
   z-index: -1;
 }
 
+#skeletonVert {
+  width: 100vw;
+  height: 160px;
+  background-image: url("./assets/skeleton-rect.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 600px) {
   header,
   footer {
@@ -150,12 +161,16 @@ footer {
     margin: 0;
   }
 
-   .leftAddress > * {
+  header {
+    margin-left: 5vw;
+  }
+
+  .leftAddress > * {
     margin: 15px 0;
   }
 
   #skull {
-    width: 90vw; 
+    width: 90vw;
     height: 90vw;
     margin-top: 5vw;
     background-size: cover;
@@ -163,10 +178,10 @@ footer {
 
   #aboutMe {
     box-shadow: 0px;
-    margin: 30px 0 50px 0; 
+    margin: 30px 0 50px 0;
     width: 90vw;
   }
-  
+
   main {
     margin: 0 5vw 30vw 5vw;
   }
@@ -188,14 +203,12 @@ footer {
   }
 
   li {
-  margin: 5vw 0;
+    margin: 5vw 0;
   }
 
   #skeletonVert {
     width: 100vw;
     height: 160px;
-    background-image: url("./assets/skeleton-rect.jpg");
-    background-size: cover;
     margin: 0;
     padding: 0;
   }
@@ -206,30 +219,41 @@ footer {
     z-index: 1;
     float: left;
   }
-  
-#skull {
-  justify-content: flex-start;
-  padding-left: 300px;
-  text-wrap: nowrap;
-}
+
+  #skull {
+    justify-content: flex-start;
+    padding-left: 300px;
+    background-size: contain;
+    text-wrap: nowrap;
+  }
 
   #aboutMe {
     height: 400px;
     margin-left: -200px;
     padding-left: 200px;
+    float: right;
   }
 
   ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 2fr);
- /*   gap: 2.5vw;
-    margin: 0; */
+  }
+
+  #skeletonVert {
+    width: 45vw;
+    height: 30vw;
   }
 }
 
 @media (min-width: 1025px) {
   #aboutMe {
-    box-shadow: var(--shadow-elevation-medium); 
+    box-shadow: var(--shadow-elevation-medium);
   }
+
+  #skeletonVert {
+    width: 45vw;
+    height: 30vw;
+  }
+
 }
