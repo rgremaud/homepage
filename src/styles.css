@@ -215,23 +215,22 @@ footer {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-  #skull {
-    z-index: 1;
-    float: left;
+  header { 
+    display: block;
   }
 
   #skull {
     justify-content: flex-start;
     padding-left: 300px;
+    float: left;
     background-size: contain;
-    text-wrap: nowrap;
   }
 
   #aboutMe {
+    /*float: right; 
     height: 400px;
     margin-left: -200px;
-    padding-left: 200px;
-    float: right;
+    padding-left: 200px; */
   }
 
   ol {
