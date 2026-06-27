@@ -26,7 +26,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 header {
   display: flex;
   justify-content: center;
@@ -48,6 +47,7 @@ main {
   font-size: 3rem;
   color: white;
   background-image: url("./assets/skull-sq.jpg");
+  background-size: cover;
 }
 
 #aboutMe {
@@ -216,21 +216,23 @@ footer {
 
 @media (min-width: 600px) and (max-width: 1024px) {
   header { 
-    display: block;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    width: 90vw;
   }
 
   #skull {
     justify-content: flex-start;
+    margin-right: -5vw;
+    z-index: 1;
+    text-wrap: nowrap;
     padding-left: 300px;
-    float: left;
-    background-size: contain;
   }
 
   #aboutMe {
-    /*float: right; 
-    height: 400px;
-    margin-left: -200px;
-    padding-left: 200px; */
+    padding-left: 5vw;
   }
 
   ol {
